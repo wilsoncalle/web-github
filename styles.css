@@ -1,0 +1,15 @@
+.contenteditable:focus {
+    outline: none;
+}
+
+.toolbar-btn {
+    @apply p-2 rounded hover:bg-gray-100 transition-colors;
+}
+
+.page-item {
+    @apply p-2 rounded cursor-pointer hover:bg-gray-100;
+}
+
+.page-item.active {
+    @apply bg-blue-100;
+}

@@ -10,286 +10,72 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-      /* Custom styles for better readability and aesthetics */
-      body {
-        font-family: 'Inter', sans-serif; /* Use Inter font */
-      }
-      h1, h2, h3 {
-        font-weight: 600; /* Semi-bold headings */
-      }
+      /* Todos los estilos personalizados se mantienen aquí */
+      body { font-family: 'Inter', sans-serif; }
+      h1, h2, h3 { font-weight: 600; }
       section {
-        margin-bottom: 3rem; /* Space between sections */
+        margin-bottom: 3rem;
         padding: 2rem;
         background-color: white;
-        border-radius: 0.5rem; /* Rounded corners for sections */
-        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); /* Subtle shadow */
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
       }
-      /* Style for image suggestions */
       .image-suggestion {
           display: block;
           text-align: center;
           padding: 2rem;
           margin: 1rem 0;
-          border: 2px dashed #cbd5e1; /* Tailwind gray-300 */
-          border-radius: 0.375rem; /* Rounded corners */
-          background-color: #f1f5f9; /* Tailwind slate-100 */
-          color: #64748b; /* Tailwind slate-500 */
+          border: 2px dashed #cbd5e1;
+          border-radius: 0.375rem;
+          background-color: #f1f5f9;
+          color: #64748b;
           font-style: italic;
       }
-      /* Style for FAQ */
       details {
-          background-color: #f8fafc; /* Tailwind slate-50 */
-          border: 1px solid #e2e8f0; /* Tailwind slate-200 */
+          background-color: #f8fafc;
+          border: 1px solid #e2e8f0;
           border-radius: 0.375rem;
           padding: 1rem;
           margin-bottom: 0.5rem;
       }
-      summary {
-          font-weight: 600;
-          cursor: pointer;
-      }
-      /* Style for Bootstrap Icons */
+      summary { font-weight: 600; cursor: pointer; }
       .bi {
-        vertical-align: -0.125em; /* Align icons better with text */
-        margin-right: 0.35rem; /* Space between icon and text */
-        font-size: 1.1em; /* Slightly larger icons */
+        vertical-align: -0.125em;
+        margin-right: 0.35rem;
+        font-size: 1.1em;
       }
-      h1 .bi {
-        font-size: 1.2em; /* Larger icon for main title */
-      }
-      h2 .bi {
-         font-size: 1.15em; /* Slightly larger icons for section titles */
-      }
+      h1 .bi { font-size: 1.2em; }
+      h2 .bi { font-size: 1.15em; }
     </style>
 </head>
 <body class="bg-gradient-to-b from-slate-900 to-slate-800 text-slate-800 leading-relaxed p-4 md:p-8">
-
     <div class="container mx-auto max-w-4xl bg-slate-50 p-6 md:p-10 rounded-lg shadow-xl">
-
         <header class="text-center mb-12 border-b border-slate-300 pb-6">
             <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
                 <i class="bi bi-stars"></i> Explorando el Cosmos
             </h1>
             <p class="text-lg text-slate-600">Una guía completa del universo, desde su origen hasta sus misterios más profundos.</p>
         </header>
-
-        <section id="introduccion">
-            <h2 class="text-3xl font-semibold text-slate-800 mb-6 border-l-4 border-blue-600 pl-4">
-                <i class="bi bi-brightness-high-fill"></i> Bienvenidos al Universo
-            </h2>
-            <p class="mb-4">El Cosmos es la totalidad del espacio y el tiempo, de todas las formas de la materia, la energía, el impulso, las leyes y constantes físicas que las gobiernan. Es un vasto escenario de maravillas inimaginables, desde el brillo de miles de millones de estrellas hasta la danza silenciosa de las galaxias a través de eones. Su inmensidad desafía nuestra comprensión, su belleza inspira asombro y sus misterios invitan a la exploración incansable.</p>
-            <p class="mb-4">Esta página tiene como propósito ofrecerte una visión general, pero detallada, de nuestro universo. Viajaremos desde el instante de su nacimiento hasta las estructuras más colosales que lo pueblan, exploraremos sus componentes fundamentales (visibles e invisibles) y descubriremos cómo la humanidad ha llegado a conocer lo que sabe sobre él.</p>
-            <p class="font-semibold text-slate-700">Prepárate para un viaje fascinante a través de la escala cósmica, un recorrido que nos recuerda tanto nuestra pequeñez como nuestro increíble potencial para comprender el lugar que ocupamos en este vasto océano cósmico.</p>
-            <div class="image-suggestion">[SUGERENCIA: Insertar imagen panorámica impactante del espacio, como la Nebulosa del Águila o una galaxia espiral]</div>
-        </section>
-
-        <section id="origen">
-            <h2 class="text-3xl font-semibold text-slate-800 mb-6 border-l-4 border-blue-600 pl-4">
-                <i class="bi bi-bullseye"></i> El Origen: El Big Bang y la Evolución Cósmica
-            </h2>
-            <p class="mb-4">La teoría científica predominante sobre el origen del universo es la del Big Bang. No describe una "explosión" en un espacio preexistente, sino la expansión del propio espacio-tiempo desde un estado inicial de densidad y temperatura extremadamente altas hace aproximadamente 13.800 millones de años.</p>
-            <h3 class="text-xl font-semibold text-slate-700 mt-6 mb-3">Evidencia del Big Bang:</h3>
-            <ul class="list-disc list-inside mb-4 space-y-2 text-slate-700">
-                <li><strong>Expansión del Universo:</strong> Observamos que las galaxias lejanas se alejan de nosotros (y entre sí), y cuanto más lejos están, más rápido lo hacen (Ley de Hubble-Lemaître). Esto indica que el espacio mismo se está expandiendo.</li>
-                <li><strong>Radiación de Fondo de Microondas (CMB):</strong> Es el resplandor remanente del universo temprano, una "luz fósil" increíblemente uniforme que llena todo el espacio. Corresponde a la época en que el universo se enfrió lo suficiente como para que se formaran los primeros átomos neutros (unos 380.000 años después del Big Bang).</li>
-                <li><strong>Abundancia de Elementos Ligeros:</strong> Las proporciones observadas de hidrógeno, helio y litio en el universo primitivo coinciden con las predicciones de la nucleosíntesis primordial que habría ocurrido en los primeros minutos tras el Big Bang.</li>
-            </ul>
-            <div class="image-suggestion">[SUGERENCIA: Insertar gráfico de la línea temporal del Big Bang, mostrando inflación, CMB, formación de estrellas, etc.]</div>
-            <h3 class="text-xl font-semibold text-slate-700 mt-6 mb-3">Cronología Cósmica Temprana:</h3>
-            <p class="mb-4">Tras el instante inicial, el universo pasó por fases cruciales:</p>
-            <ul class="list-disc list-inside mb-4 space-y-2 text-slate-700">
-                <li><strong>Inflación:</strong> Un período brevísimo de expansión exponencial en la primera fracción de segundo, que "alisó" el universo y sembró las semillas de las futuras estructuras.</li>
-                <li><strong>Formación de Partículas:</strong> A medida que el universo se enfriaba, la energía se condensó en partículas elementales (quarks, electrones), que luego se combinaron para formar protones y neutrones.</li>
-                <li><strong>Nucleosíntesis Primordial:</strong> En los primeros minutos, protones y neutrones se fusionaron para crear los núcleos de los elementos más ligeros.</li>
-                <li><strong>Formación de Átomos (Recombinación):</strong> Unos 380.000 años después, el universo se enfrió lo suficiente para que los electrones se combinaran con los núcleos, formando átomos neutros. El universo se volvió transparente a la luz (el origen del CMB).</li>
-                <li><strong>Primeras Estrellas y Galaxias:</strong> Cientos de millones de años después, bajo la influencia de la gravedad (y la materia oscura), las primeras estrellas y galaxias comenzaron a formarse a partir de las acumulaciones de gas.</li>
-            </ul>
-            <p>La edad del universo, estimada en unos 13.800 millones de años, se calcula midiendo la tasa de expansión actual y extrapolando hacia atrás en el tiempo, corroborado por la edad de las estrellas más antiguas y el análisis del CMB.</p>
-        </section>
-
-        <section id="componentes">
-            <h2 class="text-3xl font-semibold text-slate-800 mb-6 border-l-4 border-blue-600 pl-4">
-                <i class="bi bi-puzzle-fill"></i> Componentes Fundamentales del Cosmos
-            </h2>
-            <p class="mb-4">Sorprendentemente, todo lo que podemos ver y con lo que interactuamos directamente constituye solo una pequeña fracción del contenido total de energía y materia del universo. Los componentes principales son:</p>
-            <div class="image-suggestion">[SUGERENCIA: Insertar gráfico circular mostrando la composición del universo: ~5% Materia Ordinaria, ~27% Materia Oscura, ~68% Energía Oscura]</div>
-            <ul class="space-y-4">
-                <li>
-                    <h3 class="text-xl font-semibold text-slate-700 mb-2">Materia Ordinaria (Bariónica) (~5%):</h3>
-                    <p class="text-slate-700">Es la materia "normal" compuesta por protones, neutrones y electrones, que forman átomos. De esto están hechas las estrellas, los planetas, el gas interestelar, el polvo cósmico y nosotros mismos. Aunque es lo que observamos directamente, es minoritaria en el cómputo cósmico.</p>
-                </li>
-                <li>
-                    <h3 class="text-xl font-semibold text-slate-700 mb-2">Materia Oscura (~27%):</h3>
-                    <p class="text-slate-700">Es una forma hipotética de materia que no interactúa (o interactúa muy débilmente) con la luz, haciéndola invisible a nuestros telescopios. Su existencia se infiere por sus efectos gravitacionales:</p>
-                    <ul class="list-disc list-inside ml-4 mt-2 space-y-1 text-slate-600">
-                        <li><strong>Curvas de rotación galáctica:</strong> Las estrellas en los bordes de las galaxias giran mucho más rápido de lo esperado si solo contáramos la materia visible. Se necesita masa adicional (invisible) para explicar esta velocidad.</li>
-                        <li><strong>Lentes gravitacionales:</strong> La luz de objetos distantes se curva al pasar cerca de grandes acumulaciones de masa (como cúmulos de galaxias). La cantidad de curvatura observada sugiere mucha más masa de la que vemos.</li>
-                        <li><strong>Estructura a gran escala:</strong> Las simulaciones de la formación de la red cósmica requieren la presencia de materia oscura como "andamiaje" gravitacional para que la materia ordinaria se agrupe.</li>
-                    </ul>
-                    <p class="mt-2 text-slate-700">Su naturaleza exacta sigue siendo uno de los mayores misterios de la física moderna.</p>
-                </li>
-                <li>
-                    <h3 class="text-xl font-semibold text-slate-700 mb-2">Energía Oscura (~68%):</h3>
-                    <p class="text-slate-700">Es una forma aún más misteriosa de energía que parece permear todo el espacio y que posee una "presión negativa", actuando como una fuerza repulsiva que acelera la expansión del universo. Su descubrimiento (a finales de los 90, mediante la observación de supernovas lejanas) fue una sorpresa mayúscula. Se cree que es la componente dominante del universo actual y determinará su destino final. Podría ser una propiedad inherente del vacío (constante cosmológica) o algo más exótico.</p>
-                </li>
-            </ul>
-            <h3 class="text-xl font-semibold text-slate-700 mt-6 mb-3">Las Fuerzas Fundamentales:</h3>
-            <p class="mb-4 text-slate-700">Cuatro fuerzas gobiernan todas las interacciones en el universo:</p>
-            <ul class="list-disc list-inside space-y-2 text-slate-600">
-                <li><strong>Gravedad:</strong> La fuerza dominante a gran escala, responsable de la formación de planetas, estrellas, galaxias y la estructura cósmica. Descrita por la Relatividad General de Einstein.</li>
-                <li><strong>Electromagnetismo:</strong> Actúa sobre partículas cargadas eléctricamente. Responsable de la luz, la química, la estructura de los átomos y moléculas.</li>
-                <li><strong>Fuerza Nuclear Fuerte:</strong> Mantiene unidos los quarks dentro de protones y neutrones, y a estos últimos dentro del núcleo atómico. Es la más intensa a corta distancia.</li>
-                <li><strong>Fuerza Nuclear Débil:</strong> Responsable de ciertos tipos de desintegración radiactiva (como la desintegración beta) y de interacciones entre neutrinos.</li>
-            </ul>
-        </section>
-
-        <section id="estructuras">
-            <h2 class="text-3xl font-semibold text-slate-800 mb-6 border-l-4 border-blue-600 pl-4">
-                <i class="bi bi-diagram-3-fill"></i> Estructuras Cósmicas: De lo Pequeño a lo Inmenso
-            </h2>
-            <p class="mb-4">La gravedad ha esculpido la materia en el universo en una jerarquía de estructuras asombrosa:</p>
-            <ul class="space-y-4">
-                <li>
-                    <h3 class="text-xl font-semibold text-slate-700 mb-2">Planetas y Sistemas Planetarios:</h3>
-                    <p class="text-slate-700">Cuerpos celestes que orbitan una estrella. Nuestro Sistema Solar es un ejemplo, con planetas rocosos interiores y gigantes gaseosos/helados exteriores. Gracias a telescopios avanzados, hemos descubierto miles de <span class="font-semibold">exoplanetas</span> (planetas fuera de nuestro Sistema Solar), revelando una enorme diversidad de mundos.</p>
-                    <div class="image-suggestion">[SUGERENCIA: Insertar ilustración comparativa de tamaños de planetas del Sistema Solar y algunos exoplanetas notables]</div>
-                </li>
-                <li>
-                    <h3 class="text-xl font-semibold text-slate-700 mb-2">Estrellas y su Ciclo de Vida:</h3>
-                    <p class="text-slate-700">Son esferas gigantes de plasma que generan luz y calor mediante fusión nuclear en sus núcleos. Nacen en <span class="font-semibold">nebulosas</span> (nubes de gas y polvo), pasan por una fase de <span class="font-semibold">protoestrella</span>, y viven la mayor parte de su vida en la <span class="font-semibold">secuencia principal</span> (como nuestro Sol). Su destino final depende de su masa:</p>
-                    <ul class="list-disc list-inside ml-4 mt-2 space-y-1 text-slate-600">
-                        <li><strong>Estrellas de baja/mediana masa (como el Sol):</strong> Se expanden como <span class="font-semibold">gigantes rojas</span>, expulsan sus capas exteriores formando una nebulosa planetaria, y dejan atrás un núcleo denso llamado <span class="font-semibold">enana blanca</span>.</li>
-                        <li><strong>Estrellas masivas:</strong> Terminan su vida en una explosión cataclísmica llamada <span class="font-semibold">supernova</span>, que dispersa elementos pesados por el espacio. El remanente puede ser una <span class="font-semibold">estrella de neutrones</span> (increíblemente densa) o, si la masa es suficiente, un <span class="font-semibold">agujero negro estelar</span> (una región con gravedad tan intensa que nada, ni la luz, puede escapar).</li>
-                    </ul>
-                    <div class="image-suggestion">[SUGERENCIA: Insertar diagrama claro y visual del ciclo de vida estelar]</div>
-                </li>
-                <li>
-                    <h3 class="text-xl font-semibold text-slate-700 mb-2">Galaxias:</h3>
-                    <p class="text-slate-700">Son vastos sistemas ligados gravitacionalmente que contienen miles de millones (o billones) de estrellas, gas, polvo y materia oscura. Se clasifican principalmente en <span class="font-semibold">espirales</span> (con brazos definidos, como nuestra <span class="font-semibold">Vía Láctea</span> y Andrómeda), <span class="font-semibold">elípticas</span> (más viejas, con forma ovalada) e <span class="font-semibold">irregulares</span> (sin forma definida). Nuestra Vía Láctea pertenece al <span class="font-semibold">Grupo Local</span>, un pequeño cúmulo de unas 50 galaxias.</p>
-                    <div class="image-suggestion">[SUGERENCIA: Insertar imágenes de los diferentes tipos de galaxias: espiral, elíptica, irregular]</div>
-                </li>
-                <li>
-                    <h3 class="text-xl font-semibold text-slate-700 mb-2">Cúmulos y Supercúmulos de Galaxias:</h3>
-                    <p class="text-slate-700">Las galaxias no se distribuyen uniformemente, sino que tienden a agruparse. Los <span class="font-semibold">cúmulos de galaxias</span> contienen cientos o miles de galaxias unidas por la gravedad, inmersas en gas caliente. Estos cúmulos, a su vez, se agrupan en estructuras aún mayores llamadas <span class="font-semibold">supercúmulos</span>.</p>
-                </li>
-                <li>
-                    <h3 class="text-xl font-semibold text-slate-700 mb-2">La Red Cósmica (Cosmic Web):</h3>
-                    <p class="text-slate-700">A las escalas más grandes, el universo se asemeja a una gigantesca red tridimensional. Los supercúmulos se disponen en largos <span class="font-semibold">filamentos</span> que rodean enormes regiones relativamente vacías llamadas <span class="font-semibold">vacíos</span>. Esta "Red Cósmica" es la estructura a mayor escala conocida en el universo, resultado de la evolución gravitacional a lo largo de miles de millones de años.</p>
-                     <div class="image-suggestion">[SUGERENCIA: Insertar visualización de simulación de la Red Cósmica]</div>
-                </li>
-            </ul>
-        </section>
-
-        <section id="observacion">
-            <h2 class="text-3xl font-semibold text-slate-800 mb-6 border-l-4 border-blue-600 pl-4">
-                <i class="bi bi-binoculars-fill"></i> Observando el Universo: Herramientas y Descubrimientos
-            </h2>
-            <p class="mb-4">Nuestro conocimiento del cosmos es fruto de siglos de observación e ingenio:</p>
-            <h3 class="text-xl font-semibold text-slate-700 mt-6 mb-3">Hitos Históricos:</h3>
-            <p class="mb-4 text-slate-700">Figuras clave revolucionaron nuestra visión del universo: <span class="font-semibold">Copérnico</span> propuso el modelo heliocéntrico; <span class="font-semibold">Galileo</span> usó el telescopio para confirmar observaciones (fases de Venus, lunas de Júpiter); <span class="font-semibold">Kepler</span> formuló las leyes del movimiento planetario; <span class="font-semibold">Newton</span> desarrolló la ley de la gravitación universal; <span class="font-semibold">Einstein</span> revolucionó nuestra comprensión de la gravedad con la Relatividad General; y <span class="font-semibold">Hubble</span> demostró la existencia de otras galaxias y la expansión del universo.</p>
-            <h3 class="text-xl font-semibold text-slate-700 mt-6 mb-3">Telescopios Modernos:</h3>
-            <p class="mb-4 text-slate-700">Observamos el universo en todo el espectro electromagnético:</p>
-            <ul class="list-disc list-inside mb-4 space-y-2 text-slate-600">
-                <li><strong>Telescopios Ópticos:</strong> Captan la luz visible (ej. Grandes telescopios terrestres en Chile o Hawái, Telescopio Espacial Hubble - HST).</li>
-                <li><strong>Radiotelescopios:</strong> Detectan ondas de radio emitidas por objetos fríos como gas molecular o púlsares (ej. Very Large Array - VLA, Atacama Large Millimeter/submillimeter Array - ALMA).</li>
-                <li><strong>Telescopios Infrarrojos:</strong> Observan a través del polvo cósmico para ver estrellas en formación o galaxias lejanas (ej. Telescopio Espacial James Webb - JWST, Spitzer).</li>
-                <li><strong>Telescopios de Rayos X y Gamma:</strong> Detectan fenómenos de alta energía como agujeros negros, supernovas o estrellas de neutrones (ej. Chandra X-ray Observatory, Fermi Gamma-ray Space Telescope).</li>
-            </ul>
-             <div class="image-suggestion">[SUGERENCIA: Insertar collage de imágenes de diferentes telescopios: Hubble, Webb, VLA, ALMA]</div>
-            <h3 class="text-xl font-semibold text-slate-700 mt-6 mb-3">Ondas Gravitacionales:</h3>
-            <p class="mb-4 text-slate-700">Son "ondulaciones" en el tejido del espacio-tiempo, predichas por Einstein, generadas por eventos cósmicos violentos como la fusión de agujeros negros o estrellas de neutrones. Observatorios como <span class="font-semibold">LIGO</span> y <span class="font-semibold">Virgo</span> las detectan directamente, abriendo una nueva ventana para estudiar el universo, especialmente fenómenos invisibles a la luz.</p>
-            <h3 class="text-xl font-semibold text-slate-700 mt-6 mb-3">Exploración Espacial:</h3>
-            <p class="mb-4 text-slate-700">Misiones robóticas (<span class="font-semibold">sondas</span> como Voyager, Cassini, New Horizons; <span class="font-semibold">rovers</span> en Marte como Curiosity y Perseverance) nos proporcionan datos in situ y imágenes detalladas de planetas, lunas, asteroides y cometas, complementando las observaciones telescópicas.</p>
-             <div class="image-suggestion">[SUGERENCIA: Insertar imagen icónica de una misión espacial, como el rover Perseverance en Marte o la sonda Voyager]</div>
-        </section>
-
-        <section id="misterios">
-            <h2 class="text-3xl font-semibold text-slate-800 mb-6 border-l-4 border-blue-600 pl-4">
-                <i class="bi bi-question-circle-fill"></i> Grandes Misterios y el Futuro del Cosmos
-            </h2>
-            <p class="mb-4">A pesar de nuestros avances, el universo sigue guardando profundos secretos:</p>
-            <h3 class="text-xl font-semibold text-slate-700 mt-6 mb-3">Preguntas Abiertas Fundamentales:</h3>
-            <ul class="list-disc list-inside mb-4 space-y-2 text-slate-700">
-                <li><strong>¿Cuál es la naturaleza exacta de la Materia Oscura y la Energía Oscura?</strong> Identificar las partículas o campos responsables de estas componentes dominantes es uno de los mayores desafíos de la física actual.</li>
-                <li><strong>¿Estamos solos en el universo?</strong> La búsqueda de <span class="font-semibold">vida extraterrestre</span>, ya sea microbiana o inteligente, y de <span class="font-semibold">exoplanetas habitables</span> (con condiciones para albergar agua líquida) es un área de investigación muy activa (Astrobiología).</li>
-                <li><strong>¿Qué ocurrió antes del Big Bang?</strong> Las leyes físicas actuales fallan al intentar describir el instante inicial. ¿Hubo algo "antes"? ¿Es el Big Bang el verdadero comienzo o parte de un ciclo mayor?</li>
-                <li><strong>¿Cuál será el destino final del universo?</strong> Depende en gran medida de la naturaleza de la energía oscura. Los escenarios principales son:
-                    <ul class="list-circle list-inside ml-6 mt-1 space-y-1 text-slate-600">
-                        <li><strong>Big Freeze (Gran Enfriamiento):</strong> Si la expansión acelerada continúa indefinidamente, las galaxias se alejarán, las estrellas se apagarán y el universo se volverá frío, oscuro y vacío. Es el escenario más probable según los datos actuales.</li>
-                        <li><strong>Big Rip (Gran Desgarro):</strong> Si la energía oscura se fortalece con el tiempo, podría llegar a desgarrar las galaxias, estrellas, planetas e incluso los átomos.</li>
-                        <li><strong>Big Crunch (Gran Colapso):</strong> Si la gravedad lograra revertir la expansión (menos probable ahora), el universo volvería a colapsar sobre sí mismo.</li>
-                    </ul>
-                </li>
-            </ul>
-             <div class="image-suggestion">[SUGERENCIA: Insertar gráfico ilustrando los posibles destinos del universo: Freeze, Rip, Crunch]</div>
-            <h3 class="text-xl font-semibold text-slate-700 mt-6 mb-3">El Futuro de la Exploración:</h3>
-            <p class="mb-4 text-slate-700">Nuevas generaciones de telescopios (como el futuro Telescopio Extremadamente Grande - ELT) y misiones espaciales (a las lunas heladas de Júpiter y Saturno, misiones de retorno de muestras de Marte) prometen desvelar más secretos cósmicos en las próximas décadas. La colaboración internacional y los avances tecnológicos son clave.</p>
-        </section>
-
-        <section id="conclusion" class="bg-gradient-to-r from-blue-100 to-indigo-100 border-t-4 border-indigo-500">
-            <h2 class="text-3xl font-semibold text-slate-800 mb-6 border-l-4 border-indigo-600 pl-4">
-                 <i class="bi bi-globe-americas"></i> Nuestro Lugar en el Cosmos
-            </h2>
-            <p class="mb-4">Hemos viajado desde los orígenes ardientes del Big Bang hasta la vasta y fría expansión futura, explorando la intrincada red de galaxias, el ciclo vital de las estrellas y los misteriosos componentes invisibles que dominan el universo. La escala del cosmos es abrumadora, su complejidad asombrosa y su belleza, innegable.</p>
-            <p class="mb-4">Como habitantes de un pequeño planeta rocoso orbitando una estrella ordinaria en un brazo espiral de una galaxia entre miles de millones, nuestra existencia puede parecer insignificante. Sin embargo, la capacidad humana para observar, razonar y comprender este vasto universo es extraordinaria. Somos, como dijo Carl Sagan, "una forma de que el cosmos se conozca a sí mismo".</p>
-            <p class="font-semibold text-indigo-800">La exploración del cosmos no es solo una búsqueda de conocimiento científico, sino también un viaje de autodescubrimiento. Nos desafía a pensar más allá de nuestros límites, a apreciar la fragilidad de nuestro hogar y a mantener viva la llama de la curiosidad que nos impulsa a mirar hacia las estrellas y preguntarnos: ¿qué más hay ahí fuera?</p>
-        </section>
-
-        <section id="glosario">
-            <h2 class="text-3xl font-semibold text-slate-800 mb-6 border-l-4 border-green-600 pl-4">
-                <i class="bi bi-book-fill"></i> Glosario de Términos Clave
-            </h2>
-            <div class="space-y-3 text-slate-700">
-                <p><strong>Big Bang:</strong> Modelo cosmológico predominante que describe el origen del universo como una expansión a partir de un estado inicial extremadamente denso y caliente.</p>
-                <p><strong>Materia Oscura:</strong> Forma hipotética de materia que no interactúa con la luz pero cuya existencia se infiere por sus efectos gravitacionales.</p>
-                <p><strong>Energía Oscura:</strong> Forma hipotética de energía con presión negativa que permea el espacio y acelera la expansión del universo.</p>
-                <p><strong>Radiación de Fondo de Microondas (CMB):</strong> Radiación fósil remanente del universo temprano, cuando se formaron los primeros átomos neutros.</p>
-                <p><strong>Exoplaneta:</strong> Planeta que orbita una estrella fuera de nuestro Sistema Solar.</p>
-                <p><strong>Galaxia:</strong> Sistema masivo ligado gravitacionalmente compuesto por estrellas, remanentes estelares, gas interestelar, polvo y materia oscura.</p>
-                <p><strong>Agujero Negro:</strong> Región del espacio-tiempo con una gravedad tan fuerte que nada, ni siquiera la luz, puede escapar de ella.</p>
-                <p><strong>Supernova:</strong> Explosión estelar potente y luminosa que ocurre durante las últimas etapas evolutivas de una estrella masiva.</p>
-                <p><strong>Red Cósmica:</strong> Estructura a gran escala del universo, formada por filamentos de galaxias que rodean grandes vacíos.</p>
-                <p><strong>Ondas Gravitacionales:</strong> Ondulaciones en el tejido del espacio-tiempo causadas por eventos cósmicos acelerados.</p>
-            </div>
-        </section>
-
-        <section id="faq">
-             <h2 class="text-3xl font-semibold text-slate-800 mb-6 border-l-4 border-green-600 pl-4">
-                 <i class="bi bi-patch-question-fill"></i> Preguntas Frecuentes (FAQ)
-            </h2>
-             <div class="space-y-4">
-                <details>
-                    <summary>¿Qué edad tiene el universo?</summary>
-                    <p class="mt-2 text-slate-600">Se estima que el universo tiene aproximadamente 13.800 millones de años, basado en mediciones de la expansión cósmica y la radiación de fondo de microondas.</p>
-                </details>
-                <details>
-                    <summary>¿El universo es infinito?</summary>
-                    <p class="mt-2 text-slate-600">No lo sabemos con certeza. El universo observable (la parte que podemos ver desde la Tierra) es finito, pero el universo en su totalidad podría ser infinito. La geometría del universo parece ser plana a gran escala, lo que es compatible tanto con un universo finito como infinito.</p>
-                </details>
-                <details>
-                    <summary>¿Qué había antes del Big Bang?</summary>
-                     <p class="mt-2 text-slate-600">Esta es una de las grandes preguntas sin respuesta. Nuestras teorías físicas actuales (como la Relatividad General) no pueden describir el instante cero. Algunas ideas especulativas incluyen universos cíclicos, multiversos o un estado cuántico previo, pero no hay evidencia concluyente.</p>
-                </details>
-                 <details>
-                    <summary>¿De qué está hecho principalmente el universo?</summary>
-                    <p class="mt-2 text-slate-600">Sorprendentemente, la mayor parte del universo está compuesta por energía oscura (~68%) y materia oscura (~27%). La materia ordinaria (átomos, estrellas, planetas, nosotros) constituye solo alrededor del 5%.</p>
-                </details>
-                 <details>
-                    <summary>¿Se está expandiendo el universo?</summary>
-                    <p class="mt-2 text-slate-600">Sí, y no solo eso, sino que la expansión se está acelerando. Esto se descubrió observando supernovas lejanas y es atribuido a la energía oscura.</p>
-                </details>
-            </div>
-        </section>
+        <!-- Secciones cargadas dinámicamente -->
+        <div data-include="sections/introduccion.html"></div>
+        <div data-include="sections/origen.html"></div>
+        <div data-include="sections/componentes.html"></div>
+        <div data-include="sections/estructuras.html"></div>
+        <div data-include="sections/observacion.html"></div>
+        <div data-include="sections/misterios.html"></div>
+        <div data-include="sections/conclusion.html"></div>
+        <div data-include="sections/glosario.html"></div>
+        <div data-include="sections/faq.html"></div>
+        <div data-include="sections/prueba.html"></div>
 
         <footer class="text-center mt-12 pt-6 border-t border-slate-300 text-slate-500 text-sm">
             <p>&copy; <span id="year"></span> Exploración Cósmica. Todos los derechos reservados.</p>
             <p>Contenido creado con fines informativos y educativos.</p>
         </footer>
-
     </div>
 
+    <script src="js/loadSections.js"></script>
     <script>
-        // Set current year in footer
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>
